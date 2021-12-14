@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>もちもちずきんの部屋</title>
+    <script type="text/javascript" src="js/patternizer.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <style>
+      * { 
+        margin: 0px; 
+        padding: 0px; 
+      }
+      .logo{
+        position: absolute;
+        text-align: center;
+        top: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+      }
+      .logo img{
+        width: 350px;
+      }
+      @media screen and (min-width:1000px){
+        .logo img{
+          width: 800px;
+        }
+      }
+      @media screen and (max-height:900px){
+        .logo img{
+          width :500px;
+        }
+      }
+      th,td {
+          border: solid 1px;              /* 枠線指定 */
+          padding: 3px;
+      }
+      th{
+        width: 100px;
+      }
+      table {
+          border-collapse:  collapse;     /* セルの線を重ねる */
+          width: 100%;
+      }
+      .hyou{
+        padding-top: 50px;
+      }
+      .contents{
+        padding-bottom: 50px;
+      }
+      .cp_bgpattern15 {
+        height: 100vh;
+        background:
+        repeating-linear-gradient(-45deg,
+          transparent,
+          transparent 1em,
+          rgba(255, 231, 167, 0.7) 0,
+          rgba(248, 237, 187, 0.1) 2em,
+          rgba(248, 242, 187, 0.6) 0,
+          rgba(244, 248, 187, 0.2) 4em,
+          rgba(244, 209, 143, 0.6) 0,
+          rgba(244, 217, 143, 0.2) 2em),
+        repeating-linear-gradient(45deg,
+          transparent,
+          transparent 1em,
+          rgba(248, 239, 187, 0.7) 0,
+          rgba(248, 239, 187, 0.1) 2em,
+          rgba(248, 239, 187, 0.6) 0,
+          rgba(248, 237, 187, 0.2) 4em,
+          rgba(244, 229, 143, 0.6) 0,
+          rgba(244, 229, 143, 0.1) 2em);
+        background-blend-mode: multiply;
+      }
+      footer{
+        text-align: center;
+      }
+    </style>
+  </head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/logo_h.png" alt="" width="250px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav> -->
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="img/icon_logo.png" alt="">
+      </div>
+    </div>
+    <div class="cp_bgpattern15"></div>
+    <div class="container">
+      <div class="hyou">
+        <h4>ユーザー名　もちもちずきん</h4>
+        <table>
+          <tr>
+            <th>名称</th>
+            <td>もちもちずきん</td>
+          </tr>
+          <tr>
+            <th>原材料名</th>
+            <td>思考、アイデンティティ、水、炭素、アンモニア、石灰、リン、塩分、硝石、イオウ、フッ素、鉄、ケイ素、その他少量の15の元素</td>
+          </tr>
+          <tr>
+            <th>内容量</th>
+            <td>約60Kg</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>写真撮影、デッサン、サーバー管理、ガジェット</td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td><a href="mailto:y.maemura@pcgf.io">y.maemura@pcgf.io</a></td>
+          </tr>
+          <tr>
+            <th>消費期限</th>
+            <td>死ぬまで現役</td>
+          </tr>
+          <tr>
+            <th>保存方法</th>
+            <td>常温で保存</td>
+          </tr>
+          <tr>
+            <th>製造者</th>
+            <td><b>父と母</b><br> 兵庫県姫路市</td>
+          </tr>
+        </table>
+        <div class="caution">
+          <p>●ご指導おてやわらかにお願いします。●英語は喋れません。日本語でコミュニケーションしてください。●できるだけいい人間になれるように努力しています。仲良くしてください。●一生懸命生きています。温かい目で見守ってください。</p>
+          <p>●<b>お客様相談室</b><br><a href="https://mstdn.y-zu.org">mstdn.y-zu.org</a> </p>
+        </div>
+      </div>
+      <div class="contents">
+        <h4>各種リンク</h4>
+        <a href="https://mstdn.y-zu.org/@Yohei_Zuho" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fab fa-mastodon"></i> Mastodon</button></a>
+        <a href="https://twitter.com/YoheiZuho" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fab fa-twitter"></i> Twitter</button></a>
+        <a href="https://crowdworks.jp/public/employees/2969903?ref=mypage_nav1_account" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fas fa-book"></i> ポートフォリオ</button></a>
+        <a href="https://diary.pcgf.io" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fas fa-ghost"></i> Blog</button></a>
+
+      </div>
+    </div>
+    <footer>
+      <p>CC BY NC 4.0 YoheiZuho</p>
+    </footer>
+</body>
+</html>
