@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>もちもちずきんの部屋</title>
+    <script type="text/javascript" src="js/patternizer.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      * { 
+        margin: 0px; 
+        padding: 0px; 
+      }
+      .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        -webkit-transform: translate(-50%, -45%);
+        -ms-transform: translate(-50%, -45%);
+      }
+      .logo img{
+        width: 700px;
+      }
+      @media screen and (max-height:900px){
+        .logo img{
+          width :500px;
+        }
+      }
+      @media screen and (max-width:700px){
+        .logo img{
+          width: 350px;
+        }
+      }
+      th,td {
+          border: solid 1px;
+          padding: 3px;
+      }
+      th{
+        width: 100px;
+      }
+      table {
+          border-collapse:  collapse;
+          width: 100%;
+      }
+      .hyou{
+        padding-top: 50px;
+      }
+      .contents{
+        padding-bottom: 50px;
+      }
+      .cp_bgpattern15 {
+        height: 100vh;
+        background:
+        repeating-linear-gradient(-45deg,
+          transparent,
+          transparent 1em,
+          rgba(255, 231, 167, 0.7) 0,
+          rgba(248, 237, 187, 0.1) 2em,
+          rgba(248, 242, 187, 0.6) 0,
+          rgba(244, 248, 187, 0.2) 4em,
+          rgba(244, 209, 143, 0.6) 0,
+          rgba(244, 217, 143, 0.2) 2em),
+        repeating-linear-gradient(45deg,
+          transparent,
+          transparent 1em,
+          rgba(248, 239, 187, 0.7) 0,
+          rgba(248, 239, 187, 0.1) 2em,
+          rgba(248, 239, 187, 0.6) 0,
+          rgba(248, 237, 187, 0.2) 4em,
+          rgba(244, 229, 143, 0.6) 0,
+          rgba(244, 229, 143, 0.1) 2em);
+        background-blend-mode: multiply;
+      }
+      footer{
+        text-align: center;
+      }
+      .navber{
+        z-index: 10;
+      }
+      .logo-aria{
+        position:relative;
+      }
+      .navbar{
+        top:0;
+        position: fixed;
+        z-index: 100;
+        width: 100vw;
+      }
+      h4{
+        text-align: center;
+      }
+      .button{
+        text-align: center;
+      }
+      .link{
+        background-color: #FFF8DC;
+      }
+      .caution{
+        margin-bottom: 40px;
+      }
+      a.anchor {
+        display: block;
+        padding-top: 60px;
+        margin-top: -60px;
+      }
+      .btn-check:focus+.btn-primary, .btn-primary:focus {
+        color: #fff;
+        box-shadow: 0 0 0 0.25rem rgba(253, 205, 49, 0.5);
+      }
+      .btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.25rem rgba(253, 205, 49, 0.7);
+      }
+      .h1-title{
+        font-family: "kaisei-opti", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rgd7xzu',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+<body>
+  <div class="logo-aria">
+    <div class="cp_bgpattern15"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark"style="background-color: #FF9900;">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img src="img/logo_h.png" alt="" width="250px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">ホーム</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html#about">もちもちずきんとは</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">ポートフォリオ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html#link">各種リンク</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="logo">
+      <img src="img/portfolio.png" alt="">
+    </div>
+  </div>
+  <div class="container mb-4"> 
+    <h1 class="mt-4 mb-4 h1-title">My Portfolio</h1>
+    <p>ここでお見せできるものは少ないですが、Web制作・ロゴ制作・イラストレーションなど多岐に渡って活動しています。守秘義務等でお見せできませんが企業・団体向けにも多数実績があります。</p>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <a href="#pcgf.io"><img src="img/pcgf_io.png" class="d-block w-100" alt=""></a>
+        </div>
+        <div class="carousel-item active">
+          <a href="#sana.natori.moe"><img src="img/sana_natori_moe.png" class="d-block w-100" alt="sana.natori.moe"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#logo"><img src="img/logos.jpeg" class="d-block w-100" alt="logo"></a>
+        </div>
+        <div class="carousel-item">
+          <img src="img/illust.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="link pt-4 pb-4">
+    <a id="pcgf.io" class="anchor"></a>
+    <div class="container">
+      <h1 class="mt-4 mb-4 h1-title">PCGF公式サイト</h1>
+      <p>
+        ガジェットサークル<a href="https://pcgf.io">pcgf.io</a>のWebページのデザインを行いました。<br>
+        Bootstrapを用いてシンプルなコードで書かれています。
+      </p>
+      <img class="w-100" src="img/pcgf_io.png" alt="">
+    </div>
+  </div>
+  <div class="pt-4 pb-4">
+    <a id="sana.natori.moe" class="anchor"></a>
+    <div class="container">
+      <h1 class="mt-4 mb-4 h1-title">名取さな非公式ファンサイト</h1>
+      <p>
+        バーチャルYoutuberの名取さなさんの<a href="https://sana.natori.moe">非公式ファンサイト</a>を制作しました。
+      </p>
+      <img class="w-100" src="img/sana_natori_moe.png" alt="">
+    </div>
+  </div>
+  <div class="link pt-4 pb-4">
+    <a id="logo" class="anchor"></a>
+    <div class="container">
+      <h1 class="mt-4 h1-title">ロゴ制作</h1>
+      <h3 class="mt-4 text-center">三豊AI開発 様</h3>
+      <div class="d-flex align-items-center justify-content-center">
+        <img class="p-3" style="height: 7rem;" src="img/mitoyo-ai-dev.svg" alt="三豊AI開発">
+      </div>
+      <h3 class="mt-4 text-center">株式会社EPOCH-NET 様</h3>
+      <div class="d-flex align-items-center justify-content-center">
+        <img class="p-3" style="height: 7rem;" src="img/epoch.svg" alt="株式会社EPOCH-NET">
+      </div>
+      <h3 class="mt-4 text-center">ガジェットサークルPCGF</h3>
+      <div class="d-flex align-items-center justify-content-center">
+        <img class="p-3" style="height: 7rem;" src="img/PCGF.svg" alt="PCGF">
+      </div>
+      <h3 class="mt-4 text-center">インターネットコミュニティRintarnet</h3>
+      <div class="d-flex align-items-center justify-content-center">
+        <img class="p-3" style="height: 7rem;" src="img/rintarnet.svg" alt="rintarnet">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="mt-3">2021 CC BY NC 4.0 YoheiZuho</p>
+  </footer>
+</body>
+</html>
